@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приглашение на свадьбу | ИВАН & ВЕРОНИКА</title>
+    <style>
+        /* ===== Базовые стили ===== */
+        :root {
+            --bg-color: #faf8f5;
+            --card-bg: #ffffff;
+            --text-main: #4a4238;
+            --text-accent: #8b7355;
+            --border-soft: #e8e2d9;
+            --shadow: 0 6px 20px rgba(0,0,0,0.06);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+        .wrapper {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 20px 15px 60px;
+        }
+
+        /* ===== Шапка ===== */
+        header {
+            text-align: center;
+            padding: 50px 0 30px;
+            background: linear-gradient(180deg, #fff 0%, var(--bg-color) 100%);
+        }
+        header h1 {
+            font-size: 2.2rem;
+            font-weight: normal;
+            color: var(--text-accent);
+            margin-bottom: 10px;
+            letter-spacing: 0.5px;
+        }
+        .names {
+            font-size: 1.8rem;
+            font-style: italic;
+            color: var(--text-main);
+            margin-bottom: 15px;
+        }
+        .intro {
+            max-width: 500px;
+            margin: 0 auto;
+            color: #6b6358;
+        }
+
+        /* ===== Карточка с деталями ===== */
+        .details-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 30px;
+            margin: 40px 0;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-soft);
+            text-align: center;
+        }
+        .details-card h2 {
+            font-size: 1.3rem;
+            color: var(--text-accent);
+            margin: 25px 0 10px;
+            font-weight: normal;
+        }
+        .details-card h2:first-child { margin-top: 0; }
+        .details-card p { margin-bottom: 10px; }
+
+        /* ===== Секция с формой ===== */
+        .form-section {
+            text-align: center;
+            margin: 50px 0;
+        }
+        .form-section h2 {
+            font-size: 1.5rem;
+            color: var(--text-accent);
+            margin-bottom: 15px;
+            font-weight: normal;
+        }
+        .form-section p { margin-bottom: 25px; color: #6b6358; }
+        
+        /* Контейнер для iframe Яндекс.Форм */
+        .form-container {
+            width: 100%;
+            max-width: 650px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-soft);
+        }
+        .form-container iframe {
+            width: 100%;
+            height: 700px; /* Высота подбирается под объём анкеты */
+            border: none;
+            display: block;
+        }
+
+        /* ===== Подвал ===== */
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border-soft);
+            color: #888;
+            font-size: 0.95rem;
+        }
+        footer .heart { color: #d48a8a; font-size: 1.2rem; }
+
+        /* ===== Адаптив ===== */
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.7rem; }
+            .names { font-size: 1.4rem; }
+            .details-card { padding: 20px; }
+            .form-container iframe { height: 850px; }
+        }
+    </style>
+</head>
+<body>
+
+
+    <!-- ШАПКА -->
+<div class="wrapper">
+    <header>
+        <h1>Приглашение на свадьбу</h1>
+        <div class="names">ИВАН & ВЕРОНИКА</div>
+        <p class="intro">
+            Мы будем счастливы разделить с вами один из самых важных дней в нашей жизни. 
+            Приглашаем вас на торжество!
+        </p>
+    </header>
+
+
+    <!-- ИНФА -->
+    <section class="details-card">
+        <h2>📅 Дата и время</h2>
+        <p>12 июля 2026 года, сбор гостей в 15:30</p>
+        
+        <h2>📍 Место проведения</h2>
+        <p>Усадьба «Тихий берег», Московская область, д. Сосновка, 15</p>
+        <p><a href="https://yandex.ru/maps/" target="_blank" style="color:var(--text-accent);">Открыть карту ↗</a></p>
+        
+        <h2>👗 Дресс-код</h2>
+        <p>Светлые тона, пастельные оттенки. Просим воздержаться от чёрного и ярко-красного.</p>
+    </section>
+
+
+    <!-- АНКЕТА -->
+    <section class="form-section">
+        <h2>✨ Анкета гостя</h2>
+        <p>Пожалуйста, заполните форму до <strong>15 июня</strong>, чтобы мы могли учесть все ваши предпочтения и организовать комфортный праздник.</p>   
+        <a href="https://forms.yandex.ru/u/69d8acb684227c21a8e80839?iframe=1" 
+            target="_blank" 
+            class="form-button"
+            style="display: inline-block; 
+                padding: 15px 30px; 
+                background: #8b7355; 
+                color: white; 
+                text-decoration: none; 
+                border-radius: 8px;
+                font-size: 1.1rem;">
+            📝 Заполнить анкету
+        </a>
+    
+        <p style="margin-top: 20px; font-size: 0.9rem; color: #6b6358;">
+            Или скопируйте ссылку:<br>
+            <code style="background: #f5f5f5; padding: 5px 10px; border-radius: 4px;">
+                https://forms.yandex.ru/u/69d8acb684227c21a8e80839?iframe=1
+            </code>
+        </p>
+    </section>
+
+
+        <!-- ПОДВАЛ -->
+    <footer>
+        <p>С любовью и предвкушением, <span class="heart">♥</span></p>
+        <p>ИВАН & ВЕРОНИКА</p>
+        <p style="margin-top: 10px;">Вопросы и пожелания: <a href="tel:+79991234567" style="color:#6b6358; text-decoration:none;">+7 (999) 123-45-67</a></p>
+    </footer>
+</div>
+
+</body>
+</html>
